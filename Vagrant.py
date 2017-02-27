@@ -56,9 +56,9 @@ class PrefsMeta(type):
                     return self.validVagrantfilePath
 
                 # If this directory has the git folder, stop.
-                if exists(folder + "/.git") and isdir(folder + "/.git"):
-                    print('Unable to find Vagrantfile, found .git folder and assumed this is the root of your project.')
-                    raise Exception("Unable to find Vagrantfile, found .git folder and assumed this is the root of your project.")
+                # if exists(folder + "/.git") and isdir(folder + "/.git"):
+                    # print('Unable to find Vagrantfile, found .git folder and assumed this is the root of your project.')
+                    # raise Exception("Unable to find Vagrantfile, found .git folder and assumed this is the root of your project.")
 
                 # Have we hit rock bottom?
                 if dirname(folder) == folder:
